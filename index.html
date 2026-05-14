@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Побудова форм</title>
+  </head>
+  <body>
+    <h1>Форма реєстрації</h1>
+    <form>
+      <fieldset>
+        <label
+          ><span>Повне ім'я</span>
+          <input type="text" name="name" required /> </label
+        ><br /><br />
+
+        <label
+          ><span>Email</span>
+          <input type="email" name="email" required /> </label
+        ><br /><br />
+
+        <label
+          ><span>Пароль</span>
+          <input type="password" name="password" required /> </label
+        ><br /><br />
+
+        <label
+          ><span>Пароль ще раз</span>
+          <input type="password" name="password" required /> </label
+        ><br /><br />
+
+        <label>Стать</label>
+        <label>
+          <input type="radio" name="sex" value="male" required />
+          Чоловіча
+        </label>
+
+        <label>
+          <input type="radio" name="sex" value="female" />
+          Жіноча </label
+        ><br /><br />
+
+        <label
+          ><span>Вік:</span>
+          <input type="number" name="age" min="1" max="120" required /> </label
+        ><br /><br />
+
+        <label
+          ><span>Курс</span>
+          <select name="course" required>
+            <option value="" selected disabled hidden>Виберіть курс</option>
+            <option value="front-end">Front-End</option>
+            <option value="back-end">Back-End</option>
+            <option value="pm">Project Management</option>
+            <option value="qa">QA Manual</option>
+          </select></label
+        ><br /><br />
+
+        <label
+          ><span>Повна адреса</span>
+          <textarea name="address" required></textarea></label
+        ><br /><br />
+
+        <label>
+          <input type="checkbox" name="agreement" required />
+          Я погоджуюсь з обробкою персональних даних </label
+        ><br /><br />
+
+        <input type="submit" value="Очистити форму" />
+        <input type="submit" value="Зареєструватися" />
+      </fieldset>
+    </form>
+  </body>
+</html>
